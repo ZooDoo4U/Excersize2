@@ -54,6 +54,9 @@
           <button ng-click="got.moveBackToBuy(item.id);">Back to Buy</button>
         </li>
       </ul>
+      <div ng-if="got.boughtList().length<=0">
+        No Items to purchase yet...
+      </div>
     </div>                            
     </body>
     <script src="angular.min.js"></script>
