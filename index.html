@@ -41,7 +41,7 @@
           <button ng-click="buy.itemBought(item.id);">Buy It...</button>
         </li>
       </ul>
-      <div ng-if="buy.buyItemList().length<=0">
+      <div ng-if="buy.buyItemList().length<=0"  class="emptyMessage">
         No Items on check list, Add back from purshed list or add new.    
       </div>
     </div>
@@ -54,7 +54,7 @@
           <button ng-click="got.moveBackToBuy(item.id);">Back to Buy</button>
         </li>
       </ul>
-      <div ng-if="got.boughtList().length<=0">
+      <div ng-if="got.boughtList().length<=0"  class="emptyMessage">
         No Items to purchase yet...
       </div>
     </div>                            
